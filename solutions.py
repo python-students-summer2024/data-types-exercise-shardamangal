@@ -11,6 +11,11 @@ def calculate_profit():
     You can assume the user will enter only numeric characters, e.g. "3000", not "$3,000.00"
     The output should match the format of the following examples: "Profit: $690.00" for sales of $3,000, or "Profit: $2,300.00" for sales of $10,000, etc.
     """
+annualprofitpercentage = 0.23
+projectedAmount = int(input("Enter the projected amount of total sales:"))
+profit = projectedAmount * annualprofitpercentage
+print("The profit will be " + str(profit) + " with annual sales of " + str(projectedAmount) + ".")
+
 
 
 def calculate_quotient_and_remainder():
@@ -22,6 +27,12 @@ def calculate_quotient_and_remainder():
       Enter number #2: 2
       2 goes into 5 a total of 2 times with a remainder of 1
     """
+num1 = int(input("Enter the first number: ")) 
+num2 = int(input("Enter the second number: ")) 
+quotient = num1 // num2 
+remainder = num1 % num2 
+print("These numbers can be divided " + str(quotient) + " times.") 
+print("There is a remainder of " + str(remainder) + ".")
 
 
 def calculate_miles_per_gallon():
@@ -35,6 +46,10 @@ def calculate_miles_per_gallon():
       Gas used (gallons): 25
       Miles per gallon: 2.2
     """
+    miles = int(input("Enter the number of miles driven: "))
+    gallons = int(input("Enter the gallons of gas used: "))
+    mpg = miles / gallons
+    print("The car's MPG is " + str(mpg) + ".")
 
 
 def align_text():
@@ -53,3 +68,9 @@ def align_text():
       Price #2: $   10.00
       Price #3: $ 9532.60
     """
+    Num1 = int(input("Enter a number:"))
+    Num2 = int(input("Enter another number:"))
+    Num3 = int(input("Enter one more number:"))
+    print("{:.2f}".format(Num1))
+    print("{:.2f}".format(Num2))
+    print("{:.2f}".format(Num3))
